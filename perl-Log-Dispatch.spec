@@ -1,6 +1,6 @@
 %define module  Log-Dispatch
 %define name    perl-%{module}
-%define version 2.12
+%define version 2.17
 %define release %mkrel 1
 
 Name:           %{name}
@@ -11,7 +11,6 @@ License:        GPL or Artistic
 Group:          Development/Perl
 Url:            http://search.cpan.org/dist/%{module}
 Source:         http://www.cpan.org/modules/by-module/Log/%{module}-%{version}.tar.bz2
-Patch0:         Log-Dispatch-2.11-mod_perl2.diff
 BuildRequires:  perl-devel
 BuildRequires:  perl(Params::Validate)
 BuildRequires:  perl(Module::Build)
@@ -38,7 +37,6 @@ mod_perl.
 
 %prep
 %setup -q -n %{module}-%{version}
-%patch0 -p0
 
 %build
 %{__perl} Build.PL installdirs=vendor
