@@ -18,6 +18,7 @@ BuildRequires:  perl(Mail::Sender)
 BuildRequires:  perl(Mail::Sendmail)
 BuildRequires:  perl(MIME::Lite)
 BuildArch:      noarch
+BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description 
 %{module} module for Perl.  Log::Dispatch is a suite of OO modules for
