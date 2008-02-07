@@ -1,6 +1,6 @@
 %define module  Log-Dispatch
 %define name    perl-%{module}
-%define version 2.20
+%define version 2.21
 %define release %mkrel 1
 
 Name:           %{name}
