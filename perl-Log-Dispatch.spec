@@ -1,5 +1,5 @@
 %define upstream_name    Log-Dispatch
-%define upstream_version 2.25
+%define upstream_version 2.26
 
 Name:           perl-%{upstream_name}
 Version:        %perl_convert_version %{upstream_version}
