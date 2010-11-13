@@ -1,5 +1,5 @@
 %define upstream_name    Log-Dispatch
-%define upstream_version 2.26
+%define upstream_version 2.27
 
 Name:           perl-%{upstream_name}
 Version:        %perl_convert_version %{upstream_version}
@@ -12,7 +12,6 @@ Url:            http://search.cpan.org/dist/%{upstream_name}
 Source0:        http://www.cpan.org/modules/by-module/Log/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:  perl(Params::Validate)
-BuildRequires:  perl(Module::Build)
 BuildRequires:  perl(Mail::Sender)
 BuildRequires:  perl(Mail::Sendmail)
 BuildRequires:  perl(MIME::Lite)
@@ -20,11 +19,10 @@ BuildArch:      noarch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 
 %description 
-%{upstream_name} module for Perl.  Log::Dispatch is a suite of OO modules for
-logging messages to multiple outputs, each of which can have a minimum
-and maximum log level.  It is designed to be easily subclassed, both
-for creating a new dispatcher object and particularly for creating new
-outputs.
+Log::Dispatch is a suite of OO modules for logging messages to multiple
+outputs, each of which can have a minimum and maximum log level.  It is
+designed to be easily subclassed, both for creating a new dispatcher object and
+particularly for creating new outputs.
 
 %package ApacheLog
 Summary: Apache mod_perl dispatcher for Log::Dispatch
@@ -38,15 +36,15 @@ mod_perl.
 %setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
-%{__perl} Build.PL installdirs=vendor
-./Build CFLAGS="%{optflags}"
+%{__perl} Makefile.PL INSTALLDIRS=vendor
+%make CFLAGS="%{optflags}"
 
 %check
-./Build test
+%make test
 
 %install
 rm -rf %{buildroot}
-./Build install destdir=%{buildroot}
+%makeinstall_std
 
 %clean 
 rm -rf %{buildroot}
