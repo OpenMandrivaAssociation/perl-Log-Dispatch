@@ -1,2 +1,4 @@
+removed_sources:
+  Log-Dispatch-2.29.tar.gz: d54a1b253964dd7166ba2727495e8fbd33d892d6
 sources:
-  "Log-Dispatch-2.29.tar.gz": d54a1b253964dd7166ba2727495e8fbd33d892d6
+  Log-Dispatch-2.41.tar.gz: b6928e12bb28605a8d42db1e9ba39b7b0bd168b7

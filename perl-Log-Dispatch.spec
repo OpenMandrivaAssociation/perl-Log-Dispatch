@@ -1,15 +1,15 @@
 %define upstream_name    Log-Dispatch
-%define upstream_version 2.29
+%define upstream_version 2.41
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	1
 
 Summary:	Perl modules for logging messages to multiple outputs
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Log/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Log/Log-Dispatch-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Params::Validate)
@@ -149,4 +149,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 - 2.10
 - fix install
 - fix perms
+
 
