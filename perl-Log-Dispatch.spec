@@ -12,6 +12,7 @@ Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Log/Log-Dispatch-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
+BuildRequires: perl(Class::Load)
 BuildRequires:	perl(Params::Validate)
 BuildRequires:	perl(Mail::Sender)
 BuildRequires:	perl(Mail::Sendmail)
