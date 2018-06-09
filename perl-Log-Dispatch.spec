@@ -21,6 +21,9 @@ BuildRequires:	perl(namespace::autoclean)
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl(Specio::Exporter)
 BuildRequires:	perl(Params::ValidationCompiler)
+BuildRequires:	perl(Test::Needs)
+BuildRequires:	perl(Sub::Identify)
+BuildRequires:	perl(Devel::GlobalDestruction)
 BuildArch:	noarch
 
 %description 
