@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	1
+Release:	2
 
 Summary:	Perl modules for logging messages to multiple outputs
 License:	GPL+ or Artistic
@@ -25,6 +25,7 @@ BuildRequires:	perl(Test::Needs)
 BuildRequires:	perl(Sub::Identify)
 BuildRequires:	perl(Devel::GlobalDestruction)
 BuildArch:	noarch
+Provides:	perl(Log::Dispatch::File)
 
 %description 
 Log::Dispatch is a suite of OO modules for logging messages to multiple
