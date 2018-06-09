@@ -25,7 +25,6 @@ BuildRequires:	perl(Test::Needs)
 BuildRequires:	perl(Sub::Identify)
 BuildRequires:	perl(Devel::GlobalDestruction)
 BuildArch:	noarch
-Provides:	perl(Log::Dispatch::File)
 
 %description 
 Log::Dispatch is a suite of OO modules for logging messages to multiple
