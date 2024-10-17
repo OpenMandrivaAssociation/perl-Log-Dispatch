@@ -8,7 +8,7 @@ Release:	4
 Summary:	Perl modules for logging messages to multiple outputs
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Log/Log-Dispatch-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
